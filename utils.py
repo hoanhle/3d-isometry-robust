@@ -8,8 +8,8 @@ import torch.nn.init as init
 import csv
 import statistics as stat
 
-_, term_width = os.popen('stty size', 'r').read().split()
-term_width = int(term_width)
+# _, term_width = os.popen('stty size', 'r').read().split()
+term_width = 80
 TOTAL_BAR_LENGTH = 86.
 last_time = time.time()
 begin_time = last_time
