@@ -215,7 +215,7 @@ if __name__ == '__main__':
     print('======> Loading data')
     #print(args.augment, args.feature_transform)
     if args.augment:
-        train_tfs = compose([rotate_y(), 
+        train_tfs = compose([rotate_all(),
                              rand_scale(), 
                              rand_translate(), 
                              jitter(), 
